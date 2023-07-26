@@ -39,3 +39,14 @@ Fuentes
 stackoverflow.com/questions/67299782/is-usecallback-a-performance-boost-for-the-react-app
 
 ---------------------------------------------------------------------------------------------
+
+Kannst du mir eine detaillierte Beschreibung geben wie ich diese Anwendung zum Laufen bringe?
+---
+Sicher, hier sind die Schritte zum Ausführen der oben genannten ReactJS-Anwendung:
+
+- Speichern Sie den Code in einer Datei namens app.html.
+- Öffnen Sie eine neue Konsole und wechseln Sie in das Verzeichnis, in dem Sie die app.html-Datei gespeichert haben.
+- Führen Sie den folgenden Befehl aus, um die Anwendung auszuführen:
+npx serve
+
+Die Anwendung wird in einem neuen Browserfenster geöffnet. Sie sollten eine Überschrift mit dem Text "Hallo Welt!" sehen.
