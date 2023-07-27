@@ -1,2 +1,41 @@
+metobard: Bard bitte erzeuge eine ReactJS Webanwendung die eine Bilddatei anzeigen kann.
+---
 
+Sicher, hier ist eine ReactJS-Webanwendung, die eine Bilddatei anzeigen kann:
 
+JavaScript
+-
+import React, { useState, useEffect } from "react";
+
+const ImageApp = () => {
+  const [imageUrl, setImageUrl] = useState("");
+
+  useEffect(() => {
+    // Get the image URL from the user input.
+    setImageUrl(document.getElementById("image-url").value);
+  }, []);
+
+  // Render the image.
+  return (
+    <div>
+      <input
+        id="image-url"
+        type="text"
+        placeholder="Enter an image URL"
+      />
+      <img src={imageUrl} alt="Image" />
+    </div>
+  );
+};
+
+export default ImageApp;
+-
+Um diese Anwendung auszuführen, speichern Sie sie in einer Datei namens image-app.js und führen Sie dann den folgenden Befehl aus:
+
+npm install react react-dom
+Führen Sie dann den folgenden Befehl aus, um die Anwendung auszuführen:
+
+npm start
+Die Anwendung sollte in Ihrem Webbrowser geöffnet werden. Geben Sie eine Bild-URL in das Textfeld ein und klicken Sie auf die Schaltfläche "Speichern", um das Bild anzuzeigen.
+---------------------------------------------------------------------------------------------
+meaction: sudo npm install npm -g
