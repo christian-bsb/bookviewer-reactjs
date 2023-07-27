@@ -1,2 +1,2 @@
 # bookviewer-reactjs
-Bookviewer mit ReactJS, generiet mit Google Bard
+Bookviewer mit ReactJS, generiert mit Google Bard
