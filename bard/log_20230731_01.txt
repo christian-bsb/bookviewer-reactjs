@@ -1,0 +1,94 @@
+
+metobard: Hallo Bard, bitte generiere eine ReactJS function die ein geteiltes Fenster erzeugt. Links soll ein Navigationsbereich sein und rechts soll ein Bild angezeigt werden.
+---
+function SplitWindow() {
+  return (
+    <div className="split-window">
+      <div className="left-nav">
+        <ul>
+          <li>Navi 1</li>
+          <li>Navi 2</li>
+          <li>Navi 3</li>
+        </ul>
+      </div>
+      <div className="right-image">
+        <img src="https://placehold.it/1000x500" alt="Image" />
+      </div>
+    </div>
+  );
+}
+
+---------------------------------------------------------------------------------------------
+Kannst du mit CSS Befehlen erreichen dass die beiden Fenster nebeneinander liegen  und nicht übereinander?
+---
+.split-window {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+}
+
+---------------------------------------------------------------------------------------------
+Kannst du bitte auch noch mit CSS die Breite des split-window divs begrenzen?
+---
+
+.split-window {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+}
+---------------------------------------------------------------------------------------------
+Und jetzt bitte noch das split-window div horizontal zentrieren
+---
+.split-window {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+}
+-
+Die CSS-Eigenschaft margin: 0 auto sagt dem Browser, dass das split-window-Div horizontal zentriert werden soll.
+---------------------------------------------------------------------------------------------
+Kannst du der App noch einen header geben mit einem Label 'BookViewer' oben links?
+---
+function SplitWindowWithHeader() {
+  return (
+    <div className="split-window">
+      <header className="header">
+        <h1>BookViewer</h1>
+      </header>
+      <div className="left-nav">
+        <ul>
+          <li>Navi 1</li>
+          <li>Navi 2</li>
+          <li>Navi 3</li>
+        </ul>
+      </div>
+      <div className="right-image">
+        <img src="https://placehold.it/1000x500" alt="Image" />
+      </div>
+    </div>
+  );
+}

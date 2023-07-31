@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* log_20230731_01.txt start */
+
+.split-window {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-nav {
+  flex: 1;
+}
+
+.right-image {
+  flex: 1;
+}
+
+/* log_20230731_01.txt ende */

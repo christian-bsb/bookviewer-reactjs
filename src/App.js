@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +22,43 @@ function App() {
     </div>
   );
 }
+*/
+function App() {
+  return (
+    <div className="split-window">
+      <div className="left-nav">
+        <ul>
+          <li>Navi 1</li>
+          <li>Navi 2</li>
+          <li>Navi 3</li>
+        </ul>
+      </div>
+      <div className="right-image">
+        <img src="https://placehold.it/1000x500" alt="Image" />
+      </div>
+    </div>
+  );
+}
 
+/*
+function App() {
+  return (
+    <div className="split-window">
+      <header className="header">
+        <h1>BookViewer</h1>
+      </header>
+      <div className="left-nav">
+        <ul>
+          <li>Navi 1</li>
+          <li>Navi 2</li>
+          <li>Navi 3</li>
+        </ul>
+      </div>
+      <div className="right-image">
+        <img src="https://placehold.it/1000x500" alt="Image" />
+      </div>
+    </div>
+  );
+}
+*/
 export default App;
