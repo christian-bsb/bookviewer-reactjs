@@ -1,25 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const ImageApp = () => {
-  const [imageUrl, setImageUrl] = useState("");
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-  useEffect(() => {
-    // Get the image URL from the user input.
-    setImageUrl(document.getElementById("image-url").value);
-  }, []);
-
-  // Render the image.
-  return (
-    <div>
-      <input
-        id="image-url"
-        type="text"
-        placeholder="Enter an image URL"
-      />
-      <img src={imageUrl} alt="Image" />
-    </div>
-  );
-};
-
-export default ImageApp;
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
