@@ -1,51 +1,10 @@
+Kannst du die Applikation bitte mit React bootstrap erzeugen?
+---
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { Container, Row, Col, Nav, NavLink, Card } from "react-bootstrap";
-/*
-import logo from './logo.svg';
-import './App.css';
-*/
 
-/*
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-function App() {
-  return (
-    <div className="split-window">
-      <div className="left-nav">
-        <ul>
-          <li>Navi 1</li>
-          <li>Navi 2</li>
-          <li>Navi 3</li>
-        </ul>
-      </div>
-      <div className="right-image">
-        <img src="https://placehold.it/1000x500" alt="Image" />
-      </div>
-    </div>
-  );
-}
-*/
-function App() {
+function BookViewer() {
   const [books, setBooks] = useState([
     {
       title: "The Lord of the Rings",
@@ -101,4 +60,5 @@ function App() {
   );
 }
 
-export default App;
+ReactDOM.render(<BookViewer />, document.getElementById("root"));
+---------------------------------------------------------------------------------------------
