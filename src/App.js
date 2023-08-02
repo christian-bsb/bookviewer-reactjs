@@ -1,9 +1,13 @@
 
 import AppHeader from "./AppHeader";
+import AppSideBar from "./AppSideBar";
 
 function App() {
   return (
-    <AppHeader />
+    <div>
+        <AppHeader />
+        <AppSideBar />
+    </div>
   );
 }
 
