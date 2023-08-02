@@ -1,25 +1,7 @@
-import React, { useState, useEffect } from "react";
+import Image from 'react-bootstrap/Image';
 
-const ImageApp = () => {
-  const [imageUrl, setImageUrl] = useState("");
+function AppImage() {
+  return <Image src="https://picsum.photos/200/300?grayscale" fluid />;
+}
 
-  useEffect(() => {
-    // Get the image URL from the user input.
-    setImageUrl(document.getElementById("image-url").value);
-  }, []);
-
-  // Render the image.
-  return (
-    <div>
-      <input
-        id="image-url"
-        type="text"
-        placeholder="Enter an image URL"
-      />
-      <img src={imageUrl} alt="Image" />
-    </div>
-  );
-};
-
-export default ImageApp;
-
+export default AppImage;
