@@ -15,7 +15,7 @@ function App() {
           <Col>
             <AppSideBar />
           </Col>
-          <Col>
+          <Col xs={10}>
             <AppImage />
           </Col>
         </Row>
