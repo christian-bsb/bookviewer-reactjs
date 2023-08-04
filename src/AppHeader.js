@@ -5,6 +5,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+import OpenManifestForm from "./OpenManifestForm";
+
 function AppHeader() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -32,15 +34,15 @@ function AppHeader() {
             <Nav.Link href="#" disabled>
               Link
             </Nav.Link>
-            <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="BSB Nummer"
-                className="me-2"
-                aria-label="nummer"
-              />
-              <Button variant="outline-success">Open</Button>
-            </Form>
+
+
+
+
+
+
+
+
+            <OpenManifestForm />
           </Nav>
 
           <Form className="d-flex">
