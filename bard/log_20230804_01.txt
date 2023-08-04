@@ -1,0 +1,44 @@
+
+Kannst du eine ReactJS Komponente erzeugen die ein IIIF 2.0 Manifest anzeigt?
+---
+import React, { useState, useEffect } from "react";
+import { IIIFImage } from "iiif-image";
+
+function IIIFViewer(props) {
+  const [manifest, setManifest] = useState(null);
+  const [image, setImage] = useState(null);
+
+  useEffect(() => {
+    fetch(props.manifestUrl)
+      .then((response) => response.json())
+      .then((data) => setManifest(data));
+  }, [props.manifestUrl]);
+
+  useEffect(() => {
+    if (manifest) {
+      setImage(new IIIFImage(manifest));
+    }
+  }, [manifest]);
+
+  return (
+    <div>
+      <h1>{manifest?.metadata?.title}</h1>
+      <IIIIFImage image={image} />
+    </div>
+  );
+}
+---------------------------------------------------------------------------------------------
+
+Kannst du eine ReactJS Komponente erzeugen die eine URL vom User abfragt und dann im State abspeichert?
+---
+function MyComponent() {
+  const [url, setUrl] = useState("");
+
+  return (
+    <div>
+      <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} />
+      <button onClick={() => console.log(url)}>Submit</button>
+    </div>
+  );
+}
+---------------------------------------------------------------------------------------------
