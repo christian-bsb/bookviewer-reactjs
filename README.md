@@ -12,6 +12,7 @@ create-react-app bookviewer-reactjs
 ## Web Sources
   - https://react-bootstrap.netlify.app/docs/components/navbar
   - https://iiif.io/api/image/2.0/
+  - https://www.w3schools.com/react/react_usestate.asp
 
 ## IIIF
 ### manifest

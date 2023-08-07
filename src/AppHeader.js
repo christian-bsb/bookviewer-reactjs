@@ -1,3 +1,5 @@
+import { useState, createContext, useContext } from "react";
+
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -6,8 +8,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 import OpenManifestForm from "./OpenManifestForm";
+import {ModelContext} from "./App";
+
 
 function AppHeader() {
+    const model = useContext(ModelContext);
+    console.log(model);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -32,17 +38,9 @@ function AppHeader() {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Link
+              Link {model.id}
             </Nav.Link>
-
-
-
-
-
-
-
-
-            <OpenManifestForm />
+            <OpenManifestForm arg={model}/>
           </Nav>
 
           <Form className="d-flex">
