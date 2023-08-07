@@ -13,6 +13,10 @@ create-react-app bookviewer-reactjs
   - https://react-bootstrap.netlify.app/docs/components/navbar
   - https://iiif.io/api/image/2.0/
   - https://www.w3schools.com/react/react_usestate.asp
+  - import export: https://www.educative.io/answers/what-is-importing-and-exporting-in-react-js
+  - useContext: https://www.w3schools.com/react/react_usecontext.asp
+  - rerender parent mit useContext: https://www.w3schools.com/react/react_usecontext.asp
+
 
 ## IIIF
 ### manifest

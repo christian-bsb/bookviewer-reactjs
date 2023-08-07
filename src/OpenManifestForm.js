@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import ReactDOM from 'react-dom/client';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-function OpenManifestForm({arg}) {
-  const [model, setModel] = useState(arg);
+import {ModelContext} from "./App";
+
+
+function OpenManifestForm() {
+  const [model, setModel] = useContext(ModelContext);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -19,7 +22,7 @@ function OpenManifestForm({arg}) {
                   placeholder="BSB Nummer"
                   className="me-2"
                   value={model.id}
-                  onChange={(e) => setModel({ id:e.target.value, manifest:"333333"})}
+                  onChange={(e) => setModel({ id:e.target.value, manifest:"334333"})}
                 />
                 <Button variant="outline-success" type="submit">Open {model.id}</Button>
               </Form>

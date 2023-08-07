@@ -12,7 +12,8 @@ import {ModelContext} from "./App";
 
 
 function AppHeader() {
-    const model = useContext(ModelContext);
+    const [model, setModel] = useContext(ModelContext);
+    console.log('AppHeader');
     console.log(model);
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
@@ -40,7 +41,7 @@ function AppHeader() {
             <Nav.Link href="#" disabled>
               Link {model.id}
             </Nav.Link>
-            <OpenManifestForm arg={model}/>
+            <OpenManifestForm />
           </Nav>
 
           <Form className="d-flex">

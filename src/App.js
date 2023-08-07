@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div>
-      <ModelContext.Provider value={model}>
+      <ModelContext.Provider value={[model, setModel]}>
       <AppHeader/>
       <Container>
         <Row>
