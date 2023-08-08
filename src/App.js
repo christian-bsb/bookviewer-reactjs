@@ -8,14 +8,17 @@ import AppSideBar from "./AppSideBar";
 import AppImage from "./image";
 
 export const ModelContext = createContext();
+export const ManifestContext = createContext();
 
 function App() {
     const [model, setModel] = useState({id: "111", manifest:"222"});
+    const [manifest, setManifest] = useState();
 
 
   return (
     <div>
       <ModelContext.Provider value={[model, setModel]}>
+       <ManifestContext.Provider value={[manifest, setManifest]}>
       <AppHeader/>
       <Container>
         <Row>
@@ -27,6 +30,7 @@ function App() {
           </Col>
         </Row>
       </Container>
+      </ManifestContext.Provider>
       </ModelContext.Provider>
     </div>
   );

@@ -2,15 +2,13 @@ import { useState, useContext } from "react";
 
 import Nav from 'react-bootstrap/Nav';
 
-import {ModelContext} from "./App";
+import {ManifestContext} from "./App";
 
 function AppSideBar() {
-    const [model, setModel] = useContext(ModelContext);
-    console.log(model);
-    const m = "XXman: " + JSON.stringify(model.manifest);
+  const [manifest, setManifest] = useContext(ManifestContext);
+  const m = JSON.stringify(manifest);
   return (
     <Nav defaultActiveKey="/home" className="flex-column">
-      <h1>Id: {model.id}</h1>
       <div>manifest {m}</div>
       <Nav.Link href="/home">Active</Nav.Link>
       <Nav.Link eventKey="link-1">Link</Nav.Link>
