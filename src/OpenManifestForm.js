@@ -18,7 +18,7 @@ function OpenManifestForm() {
       .then(response => response.json())
       .then(data => {
         model.manifest = data;
-        setModel(model);
+        setModel({ id:model.id, manifest:data});
         console.log(data);
       });
     alert(`The id you entered was: ${model.id}`);
