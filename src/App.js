@@ -12,7 +12,7 @@ export const ManifestContext = createContext();
 
 function App() {
     const [model, setModel] = useState({id: "111", manifest:"222"});
-    const [manifest, setManifest] = useState();
+    const [manifest, setManifest] = useState({});
 
 
   return (
@@ -22,10 +22,10 @@ function App() {
       <AppHeader/>
       <Container>
         <Row>
-          <Col>
+          <Col xs={2}>
             <AppSideBar />
           </Col>
-          <Col xs={10}>
+          <Col >
             <AppImage />
           </Col>
         </Row>

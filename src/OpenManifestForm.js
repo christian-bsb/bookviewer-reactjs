@@ -7,7 +7,7 @@ import { ManifestContext } from "./App";
 
 function OpenManifestForm() {
   const [manifest, setManifest] = useContext(ManifestContext);
-  const [localid, setLocalId] = useState("bsb");
+  const [localid, setLocalId] = useState("bsb11251816");
 
   const handleSubmit = (event) => {
     event.preventDefault();

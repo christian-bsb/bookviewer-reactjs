@@ -1,21 +1,21 @@
 import { useState, useContext } from "react";
 
-import Nav from 'react-bootstrap/Nav';
+import Nav from "react-bootstrap/Nav";
 
-import {ManifestContext} from "./App";
+import { ManifestContext } from "./App";
 
 function AppSideBar() {
   const [manifest, setManifest] = useContext(ManifestContext);
   const m = JSON.stringify(manifest);
+
   return (
     <Nav defaultActiveKey="/home" className="flex-column">
-      <div>manifest {m}</div>
-      <Nav.Link href="/home">Active</Nav.Link>
-      <Nav.Link eventKey="link-1">Link</Nav.Link>
-      <Nav.Link eventKey="link-2">Link</Nav.Link>
-      <Nav.Link eventKey="disabled" disabled>
-        Disabled
-      </Nav.Link>
+      <h3>manifest</h3>
+      <div>
+        {Object.keys(manifest).map((data) => {
+          return <Nav.Link eventKey="link-2">{data}</Nav.Link>;
+        })}
+      </div>
     </Nav>
   );
 }
