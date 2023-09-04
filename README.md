@@ -1,6 +1,10 @@
 # bookviewer-reactjs
 Bookviewer mit ReactJS, generiert mit Google Bard
 
+## run the App
+  - `cd <project directory>`
+  - `npm start`
+
 ## Environment
 sudo cp -r node-v18.17.0-linux-x64/{bin,include,lib,share} /usr/
 npm install --save react react-dom react-scripts
@@ -20,6 +24,8 @@ create-react-app bookviewer-reactjs
 
 ## IIIF
 ### manifest
+256 Seiten
+Buch: https://www.digitale-sammlungen.de/de/view/bsb11251816
 https://api.digitale-sammlungen.de/iiif/presentation/v2/bsb11251816/manifest
 http://iiif.io/api/image/2/context.json
 https://api.digitale-sammlungen.de/iiif/image/v2/bsb11251816_00126/info.json
